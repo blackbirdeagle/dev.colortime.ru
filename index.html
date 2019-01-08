@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	
+    <title>Главная</title>
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+	<a class="close1" href="#"><img src = "images/close.jpg"/></a>
+	<p class = "head__remark">Напишите нам письмо</p>
+	<div class="head">Мы ответим Вам в ближайшее время</div>
+	<form method = "POST" action = "">
+		<div class = "row">
+			<div class = "col-md-6"><input type = "text" name = "name" placeholder = "Ваше имя *"/></div>
+			<div class = "col-md-6"><input type = "text" class = "phone" name = "phone" placeholder = "Ваш телефон *"/></div>
+		</div>
+		<div class = "row">
+			<div class = "col-md-12">
+				<textarea name = "message" placeholder = "Ваше сообщение"></textarea>
+			</div>
+		</div>	
+		<div class = "row">
+			<div class = "col-md-6"><a class = "send_mess" href = "javascript:void(0);">Отправить</a></div>
+			<div class = "col-md-6">
+				<p class = "personal">Нажимая на кнопку, Вы даете согласие на обработку персональных данных</p>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="popup phone-pp">
+	<a class="close1" href="#"><img src = "images/close.jpg"/></a>
+	<p class = "head__remark">Закажите звонок</p>
+	<div class="head">Мы ответим на все ваши вопросы</div>
+	<form method = "POST" action = "">
+		<div class = "row">
+			<div class = "col-md-12"><input type = "text" name = "name" placeholder = "Ваше имя *"/></div>
+			<div class = "col-md-12"><input type = "text" class = "phone" name = "phone" placeholder = "Ваш телефон *"/></div>
+		</div>	
+		<div class = "row">
+			<div class = "col-md-6"><a class = "send_mess" href = "javascript:void(0);">Жду звонка!</a></div>
+			<div class = "col-md-6">
+				<p class = "personal">Нажимая на кнопку, Вы даете согласие на обработку персональных данных</p>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class = "site">
+	<header class = "header">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-lg-2 col-md-2">
+					<a class = "logo" href = "/"><img src = "images/logo.png" /></a>
+				</div>
+				<div class = "col-lg-10 col-md-10">
+					<div class = "top__header">
+						<div class = "top__header__phone">
+							<p>8-800-555-54-75</p>
+							<p>Звонок бесплатный</p>
+						</div>
+						<div class = "top__header__phone1">
+							<a popup-target = "phone-pp" href = "javascript:void(0);">Заказать обратный звонок</a>
+						</div>	
+						<div class = "top__header__email">
+							<a popup-target = "usagr-pp" href = "javascript:void(0);">Написать письмо</a>
+						</div>	
+						<div class = "registration">
+							<div class = "registration__reg">
+								<a href = "">Зарегистрироваться</a>
+							</div>
+							<div class = "registration__auth">
+								<a href = "">Войти</a>
+							</div>
+						</div>	
+					</div>
+					<div class = "top-menu_wrapper">
+						<ul class="nav navbar-nav top-menu">
+							<li><a href="/">Главная</a></li>
+							<li class = "dropdown active">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">Компания<span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="#">История компании</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Социальная миссия</a></li>
+									<li><a href="#">Товарные знаки</a></li>
+									<li><a href="#">Лицензии и патенты</a></li>
+									<li><a href="#">Страховая защита</a></li>
+									<li><a href="#">Карьера</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Инвесторы</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Социальные программы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<a class = "hide__menu" href = "javascript:void(0);"><img src = "images/close.png" /></a>
+					</div>
+					<a class = "show__menu" href = "javascript:void(0);"><img src = "images/menu_icon.png" /></a>		
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section class = "content__index">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-12">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active" style = "background-image: url('images/indexb.png');">
+								<div class = "slide__caption">
+									<p class = "slide__slogan"><span>микро-инвестор  —  Ваш Доход от инвестиций</span><br/>в нефте-газовый сектор, строительство и недвижимость</p>
+									<a class = "slide__link" href = ""><span>Стать инвестором</span> <img src = "images/go.png" /></a>
+								</div>
+							</div>			
+							<div class="item" style = "background-image: url('images/indexb.png');">
+								<div class = "slide__caption">
+									<p class = "slide__slogan"><span>микро-инвестор  —  Ваш Доход от инвестиций</span><br/>в нефте-газовый сектор, строительство и недвижимость</p>
+									<a class = "slide__link" href = ""><span>Стать инвестором</span> <img src = "images/go.png" /></a>
+								</div>							
+							</div>	
+						</div>
+						
+						<div class = "carousel__control">
+							<a class="left" href="#carousel-example-generic" data-slide="prev">
+								<img src = "images/prev.png" />
+							</a>
+							  
+							<a class="right" href="#carousel-example-generic" data-slide="next">
+								<img src = "images/next.png" />
+							</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-6">
+					<div class = "company__small">
+						<p class = "company__small__head">Компания</p>
+						<p class = "company__small__text">Консорциум, состоящий из швейцарского сырьевого трейдера Glencore и катарского инвестфонда QIA, договорился о продаже большей части своего пакета акций «Роснефти» китайскому инвестору. Покупателем 14,16% акций «Роснефти» станет частная нефтяная компания CEFC China Energy («Хуасинь»), объявил Glencore и подтвердил глава «Роснефти» Игорь Сечин. </p>
+						<div class = "company__small__new">
+							<time>12 ноября 2017</time>
+							<p class = "company__small__new__head">Какой будет акционерная структура «Роснефти» после сделки?</p>
+							<p class = "company__small__new__text">CEFC нельзя назвать широкоизвестной китайской компанией, но за несколько лет она превратилась «из нишевого топливного трейдера в быстрорастущий нефтяной и финансовый конгломерат», отмечало Reuters в начале этого года. Годовая выручка компании превышает $40 млрд.</p>
+							<a href = "">подробно</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-6">
+					<div class = "company__right">
+						<p>Консорциум, состоящий из швейцарского сырьевого трейдера Glencore и катарского инвестфонда QIA, договорился о продаже большей части своего пакета акций «Роснефти» китайскому инвестору. Покупателем 14,16% акций «Роснефти» станет частная нефтяная компания CEFC China Energy («Хуасинь»), объявил Glencore и подтвердил глава «Роснефти» Игорь Сечин. Сумма сделки превышает $9 млрд, что делает ее крупнейшей китайской инвестицией в российский бизнес.</p>
+						<p>Glencore и QIA сохранят на двоих чуть более 5% акций «Роснефти». Продав китайцам ту часть приватизированного пакета в «Роснефти», которая была куплена на заемные деньги, консорциум разом избавляется от долгового бремени и от имиджевых рисков, которые нес тот непрозрачный кредит. Но если одни вопросы уходят, то другие появляются: третьим по величине акционером «Роснефти» становится амбициозный китайский конгломерат с неясной структурой собственности и своеобразной философией.</p>
+						<a href = "">подробно</a>
+					</div>
+					<div class = "slider__posts">
+						<div class = "slider__posts__menu">
+							<p>Пресс-центр</p>
+							<ul>
+								<li item = "s_item_1" class = "active">Новости</li>
+								<li item = "s_item_2" >СМИ об организации</li>
+								<li item = "s_item_3">Пресс-релизы</li>
+								<li item = "s_item_4">Ваши вопросы</li>
+							</ul>
+						</div>
+						<div class = "slider__slides">
+							<div id = "s_item_1" class = "slides__item active">
+								<div class = "row">
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>12 ноября 2017</time>
+											<p class = "slide__item__head">Что будет с кредитом Intesa и российских банков?</p>
+											<p class = "slide__item__text">Сечин пояснил, что основную часть приватизированного в конце 2016 года пакета «Роснефти» (19,5%) консорциум Glencore и QIA приобрел на заемные средства, но в последнее время обслуживать кредит стало слишком дорого. «Волатильность на финансовых рынках привела к серьезной девальвации доллара по отношению к евро, и расходы на обслуживание этого кредита стали достаточно серьезными. </p>
+											<a href = "">подробно</a>
+										</div>
+									</div>
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>25 октября 2017</time>
+											<p class = "slide__item__head">Китайский рекорд: пять вопросов к продаже 14% «Роснефти»</p>
+											<img src = "images/record.jpg" />
+											<p class = "slide__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+											<a href = "">подробно</a>
+										</div>									
+									</div>
+								</div>
+							</div>
+							<div id = "s_item_2" class = "slides__item">
+								<div class = "row">
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>12 ноября 2017</time>
+											<p class = "slide__item__head">Что будет с кредитом Intesa и российских банков?</p>
+											<p class = "slide__item__text">Сечин пояснил, что основную часть приватизированного в конце 2016 года пакета «Роснефти» (19,5%) консорциум Glencore и QIA приобрел на заемные средства, но в последнее время обслуживать кредит стало слишком дорого. «Волатильность на финансовых рынках привела к серьезной девальвации доллара по отношению к евро, и расходы на обслуживание этого кредита стали достаточно серьезными. </p>
+											<a href = "">подробно</a>
+										</div>
+									</div>
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>25 октября 2017</time>
+											<p class = "slide__item__head">Китайский рекорд: пять вопросов к продаже 14% «Роснефти»</p>
+											<img src = "images/record.jpg" />
+											<p class = "slide__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+											<a href = "">подробно</a>
+										</div>									
+									</div>
+								</div>
+							</div>	
+							<div id = "s_item_3" class = "slides__item">
+								<div class = "row">
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>12 ноября 2017</time>
+											<p class = "slide__item__head">Что будет с кредитом Intesa и российских банков?</p>
+											<p class = "slide__item__text">Сечин пояснил, что основную часть приватизированного в конце 2016 года пакета «Роснефти» (19,5%) консорциум Glencore и QIA приобрел на заемные средства, но в последнее время обслуживать кредит стало слишком дорого. «Волатильность на финансовых рынках привела к серьезной девальвации доллара по отношению к евро, и расходы на обслуживание этого кредита стали достаточно серьезными. </p>
+											<a href = "">подробно</a>
+										</div>
+									</div>
+									<div class = "col-md-6">
+										<div class = "slide__item">
+											<time>25 октября 2017</time>
+											<p class = "slide__item__head">Китайский рекорд: пять вопросов к продаже 14% «Роснефти»</p>
+											<img src = "images/record.jpg" />
+											<p class = "slide__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+											<a href = "">подробно</a>
+										</div>									
+									</div>
+								</div>
+							</div>	
+							<div id = "s_item_4" class = "slides__item">
+								<div class = "row">
+									<div class = "col-md-12">
+				<a class="jobName" vac="vac_1" href="javascript:void(0);">Как стать инвестором<img src="images/trg.png"></a>
+				<div id="vac_1" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>
+			
+				<a class="jobName" vac="vac_2" href="javascript:void(0);">Гарантии возврата инвестиций<img src="images/trg.png"></a>
+				<div id="vac_2" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>
+			
+				<a class="jobName" vac="vac_3" href="javascript:void(0);">Риски<img src="images/trg.png"></a>
+				<div id="vac_3" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>
+			
+				<a class="jobName" vac="vac_4" href="javascript:void(0);">Застрахованы ли вклады<img src="images/trg.png"></a>
+				<div id="vac_4" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>
+			
+				<a class="jobName" vac="vac_5" href="javascript:void(0);">Юридические аспекты<img src="images/trg.png"></a>
+				<div id="vac_5" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>
+			
+				<a class="jobName" vac="vac_6" href="javascript:void(0);">Как можно получить доход<img src="images/trg.png"></a>
+				<div id="vac_6" class="vac_desc">
+					<p>Полевые исследования, оценка локации, окружения земельных участков и объектов недвижимости;
+
+Анализ развития коммерческой недвижимости и торговых сетей в городе;
+
+Разработка концепции развития объектов коммерческой, преимущественно торговой недвижимости;
+
+Разработка функционального зонирования объектов недвижимости; Подготовка бизнес-планов и аналитических отчетов для Заказчиков;</p>
+				</div>											
+									</div>
+								</div>
+							</div>								
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>	
+	</section>
+	
+	<section class = "activity">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-12">
+					<p class = "activity__head">Направления деятельности</p>
+				</div>
+			</div>
+			<div class = "activity__items">
+				<div class = "row">
+					<div class = "col-md-3 col-sm-6 col-xs-12">
+						<div class = "activity__item">
+							<img src = "images/im1.jpg" />
+							<p class = "activity__item__head">Оптовая (розничная) торговля нефтепродуктами</p>
+							<p class = "activity__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+							<a href = "">подробно</a>
+						</div>
+					</div>
+					<div class = "col-md-3 col-sm-6 col-xs-12">
+						<div class = "activity__item">
+							<img src = "images/im2.jpg" />
+							<p class = "activity__item__head">Строительство и эксплуатация АЗС и Складов ГСМ</p>
+							<p class = "activity__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+							<a href = "">подробно</a>
+						</div>	
+					</div>
+					<div class = "col-md-3 col-sm-6 col-xs-12">
+						<div class = "activity__item">
+							<img src = "images/im3.jpg" />
+							<p class = "activity__item__head">Промышленное и гражданское строительство</p>
+							<p class = "activity__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+							<a href = "">подробно</a>
+						</div>	
+					</div>
+					<div class = "col-md-3 col-sm-6 col-xs-12">
+						<div class = "activity__item">
+							<img src = "images/im4.jpg" />
+							<p class = "activity__item__head">Эксплуатация объектов недвижимости</p>
+							<p class = "activity__item__text">При этой цене покупка CEFC 14,2% акций «Роснефти» станет рекордной прямой инвестицией Китая в капитал российской компании. Сейчас крупнейшей сделкой считается покупка в 2006 году компанией Sinopec «Удмуртнефти» за $3,5 млрд, следует из данных проекта China Global Investment Tracker.</p>
+							<a href = "">подробно</a>
+						</div>	
+					</div>				
+				</div>
+			</div>	
+		</div>
+	</section>
+	
+	<footer class = "footer">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-10">
+					<ul class = "footer__menu">
+						<li><a href = "">Главная</a></li>
+						<li class = "active"><a href = "">Компания</a></li>
+						<li><a href = "">Бизнес</a></li>
+						<li><a href = "">Инвесторы</a></li>
+						<li><a href = "">Пресс-центр</a></li>
+						<li><a href = "">Социальные программы</a></li>
+						<li><a href = "">Контакты</a></li>
+					</ul>
+				</div>
+				<div class = "col-md-2">
+					<ul class = "sociallink">
+						<li><a href = ""><img src = "images/fb.png" /></a></li>
+						<li><a href = ""><img src = "images/vk.png" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class = "col-md-12">
+				<p class = "copyright">Copyright МикроИнвестор, 2017   |   <a href = "">Разработка сайта Colortime</a></p>
+			</div>
+		</div>
+	</footer>
+</div>	
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script src="js/script.js"></script>
+</body>
+</html>																																										
